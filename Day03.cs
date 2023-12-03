@@ -9,9 +9,17 @@ namespace AdventOfCode2023
 {
     internal class Day03
     {
+        /// <summary>
+        /// Computes the answer for Part 1
+        /// </summary>
+        /// <param name="inputName">The address of the input file to take input from
+        /// </param>
+        /// <returns>
+        /// Results the result as a string to be printed
+        /// </returns>
         public string Part1(string inputName)
         {
-            String[] RawInput = System.IO.File.ReadAllLines($"..\\..\\..\\Inputs\\Day03{inputName}.txt");
+            String[] RawInput = System.IO.File.ReadAllLines(inputName);
             int sum = 0;
             for(int i = 0; i < RawInput.Length; i++)
             {
@@ -55,9 +63,17 @@ namespace AdventOfCode2023
             return sum.ToString();
         }
 
+        /// <summary>
+        /// Computes the answer for Part 2
+        /// </summary>
+        /// <param name="inputName">The address of the input file to take input from
+        /// </param>
+        /// <returns>
+        /// Results the result as a string to be printed
+        /// </returns>
         public string Part2(string inputName)
         {
-            String[] RawInput = System.IO.File.ReadAllLines($"..\\..\\..\\Inputs\\Day03{inputName}.txt");
+            String[] RawInput = System.IO.File.ReadAllLines(inputName);
             Dictionary<Tuple<int, int>, List<int>> gearDict = new();
             int sum = 0;
             for (int i = 0; i < RawInput.Length; i++)
@@ -70,7 +86,7 @@ namespace AdventOfCode2023
                     {
                         valueBuilder += RawInput[i][j];
 
-                        //Check surrounding for symbols, if not already found
+                        //Check surrounding for gears, if not already found
                         for (int r = i - 1; r <= i + 1; r++)
                         {
                             for (int c = j - 1; c <= j + 1; c++)

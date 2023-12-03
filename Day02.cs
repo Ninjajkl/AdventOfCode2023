@@ -8,9 +8,17 @@ namespace AdventOfCode2023
 {
     internal class Day02
     {
+        /// <summary>
+        /// Computes the answer for Part 1
+        /// </summary>
+        /// <param name="inputName">The address of the input file to take input from
+        /// </param>
+        /// <returns>
+        /// Results the result as a string to be printed
+        /// </returns>
         public string Part1(string inputName)
         {
-            String[] RawInput = System.IO.File.ReadAllLines($"..\\..\\..\\Inputs\\Day02{inputName}.txt");
+            String[] RawInput = System.IO.File.ReadAllLines(inputName);
             int idSum = 0;
             int maxRed = 12;
             int maxGreen = 13;
@@ -46,9 +54,18 @@ namespace AdventOfCode2023
             }
             return idSum.ToString();
         }
+
+        /// <summary>
+        /// Computes the answer for Part 2
+        /// </summary>
+        /// <param name="inputName">The address of the input file to take input from
+        /// </param>
+        /// <returns>
+        /// Results the result as a string to be printed
+        /// </returns>
         public string Part2(string inputName)
         {
-            String[] RawInput = System.IO.File.ReadAllLines($"..\\..\\..\\Inputs\\Day02{inputName}.txt");
+            String[] RawInput = System.IO.File.ReadAllLines(inputName);
             int idSum = 0;
             for (int i = 0; i < RawInput.Length; i++)
             {

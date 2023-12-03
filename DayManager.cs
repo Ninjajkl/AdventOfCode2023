@@ -132,7 +132,7 @@ namespace AdventOfCode2023
                 object? dayInstance = Activator.CreateInstance(dayType);
 
                 var stopwatchPart = Stopwatch.StartNew();
-                var answer = partMethod.Invoke(dayInstance, new object[] { userStringArgument });
+                var answer = partMethod.Invoke(dayInstance, new object[] { $"..\\..\\..\\Inputs\\{dayType.Name + userStringArgument}.txt" });
                 stopwatchPart.Stop();
                 Console.WriteLine($"\n    Result: {answer}");
                 Console.WriteLine($"\n    Time Elapsed: {stopwatchPart.Elapsed.TotalSeconds} seconds");
@@ -150,7 +150,7 @@ namespace AdventOfCode2023
                 Console.WriteLine($"\n  Running Part{userPartInput}:");
 
                 var stopwatchPart = Stopwatch.StartNew();
-                var answer = partMethod.Invoke(Activator.CreateInstance(dayType), new object[] { defaultStringArgument });
+                var answer = partMethod.Invoke(Activator.CreateInstance(dayType), new object[] { $"..\\..\\..\\Inputs\\{dayType.Name + defaultStringArgument}.txt" });
                 stopwatchPart.Stop();
 
                 Console.WriteLine($"\n    Result: {answer}");
