@@ -11,10 +11,16 @@ namespace AdventOfCode2023
     {
         static void Main(string[] args)
         {
-            Console.Write("Run Everything? (y/n): ");
-            string userInput = Console.ReadLine().ToLower();
-            if (userInput == "y" || userInput == "")
+            while (true)
             {
+                Console.Write("Run Everything? (y/n): ");
+                string userInput = Console.ReadLine().ToLower();
+
+                if (userInput != "y" && userInput != "")
+                {
+                    break; // Exit the loop if the user doesn't enter "y" or press Enter
+                }
+
                 RunAllDays();
             }
 
