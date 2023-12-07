@@ -10,6 +10,14 @@ namespace AdventOfCode2023
 {
     internal class Day04
     {
+        /// <summary>
+        /// Computes the answer for Part 1
+        /// </summary>
+        /// <param name="inputName">The address of the input file to take input from
+        /// </param>
+        /// <returns>
+        /// Results the result as a string to be printed
+        /// </returns>
         public string Part1(string inputName)
         {
             String[] RawInput = System.IO.File.ReadAllLines(inputName);
@@ -23,6 +31,14 @@ namespace AdventOfCode2023
             return sum.ToString();
         }
 
+        /// <summary>
+        /// Computes the answer for Part 2
+        /// </summary>
+        /// <param name="inputName">The address of the input file to take input from
+        /// </param>
+        /// <returns>
+        /// Results the result as a string to be printed
+        /// </returns>
         public string Part2(string inputName)
         {
             String[] RawInput = System.IO.File.ReadAllLines(inputName);
@@ -40,6 +56,14 @@ namespace AdventOfCode2023
             return cardDictationary.Values.Sum().ToString();
         }
 
+        /// <summary>
+        /// Extracts the number of winning matches and returns it
+        /// </summary>
+        /// <param name="card"> The card string to be checked
+        /// </param>
+        /// <returns>
+        /// The number of winning matches on the card
+        /// </returns>
         public int NumCardMatches(string card)
         {
             const string winningPattern = @"(?<=:)\s*(\d+(?:\s+\d+)*)";
