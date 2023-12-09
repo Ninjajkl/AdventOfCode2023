@@ -87,7 +87,8 @@ namespace AdventOfCode2023
             return LCM(minMultiples).ToString();
         }
 
-        //This LCM was originally written by Rodigo Lopez on Stack Overflow
+        //This LCM was originally written by Rodigo Lop
+        //ez on Stack Overflow
         //http://stackoverflow.com/a/29717490/68936
         //I was going to write my own LCM calculator, but this one is perfect
         static long LCM(List<long> numbers)
