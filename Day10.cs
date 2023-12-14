@@ -4,9 +4,6 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Drawing;
-using System.Drawing.Drawing2D;
-using System.Collections.Generic;
 
 namespace AdventOfCode2023
 {
