@@ -63,7 +63,7 @@ namespace AdventOfCode2023
             int startIndex = 200;
             List<int> pattern = new();
             List<int> buffer = new();
-            for (int n = 1; n <= 1000000; n++)
+            for (int n = 1; n <= 1000000000; n++)
             {
                 for (int i = 0; i < 4; i++)
                 {
@@ -117,7 +117,7 @@ namespace AdventOfCode2023
                             {
                                 int patternLength = n - startIndex - 4;
 
-                                n = 1000000 - ((1000000 - n +6) % patternLength);
+                                n = 1000000000 - ((1000000000 - n) % patternLength);
                             }
                             buffer.RemoveAt(0);
                         }
