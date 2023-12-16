@@ -162,7 +162,7 @@ namespace AdventOfCode2023
                         remainingSprings = remainingSprings.Trim('.');
                         continue;
                     case '?':
-                        long val = recFunc2("." + remainingSprings.Substring(1), decibrokeSprings) + recFunc2("#" + remainingSprings.Substring(1), decibrokeSprings);
+                        long val = optRec("." + remainingSprings.Substring(1), decibrokeSprings) + optRec("#" + remainingSprings.Substring(1), decibrokeSprings);
                         founds[foundsKey] = val;
                         return val;
                     case '#':
