@@ -8,6 +8,14 @@ namespace AdventOfCode2023
 {
     internal class Day16
     {
+        /// <summary>
+        /// Computes the answer for Part 1
+        /// </summary>
+        /// <param name="inputName">The address of the input file to take input from
+        /// </param>
+        /// <returns>
+        /// Results the result as a string to be printed
+        /// </returns>
         public string Part1(string inputName)
         {
             String[] RawInput = System.IO.File.ReadAllLines(inputName);
@@ -17,6 +25,14 @@ namespace AdventOfCode2023
             return (energizedDictionary.Keys.Count-1).ToString();
         }
 
+        /// <summary>
+        /// Computes the answer for Part 2
+        /// </summary>
+        /// <param name="inputName">The address of the input file to take input from
+        /// </param>
+        /// <returns>
+        /// Results the result as a string to be printed
+        /// </returns>
         public string Part2(string inputName)
         {
             String[] RawInput = System.IO.File.ReadAllLines(inputName);
@@ -40,6 +56,17 @@ namespace AdventOfCode2023
             return maxVal.ToString();
         }
 
+        /// <summary>
+        /// Recursive function to move beam
+        /// </summary>
+        /// <param name="mirrorMap"> The Map of the mirrors
+        /// </param>
+        /// <param name="energizedDictionary"> The dictionary of visited nodes
+        /// </param>
+        /// <param name="location"> The location of the beam on the map
+        /// </param>
+        /// <param name="direction"> The direction the beam is moving
+        /// </param>
         public void MoveBeam(String[] mirrorMap, Dictionary<(int, int), List<(int, int)>> energizedDictionary, (int, int) location, (int, int) direction)
         {
             if(energizedDictionary.ContainsKey(location))

@@ -44,7 +44,6 @@ namespace AdventOfCode2023
                 string dayToRun = $"Day{dayNumber:D2}";
 
                 //Get the DayXX Type
-                Assembly assembly = Assembly.GetExecutingAssembly();
                 Type dayType = GetDayType(dayToRun);
 
                 if (dayType == null)
