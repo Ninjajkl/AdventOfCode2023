@@ -13,3 +13,9 @@ D:\Documents\Programming Stuff\Advent of Code\AdventOfCode2023\obj\Debug\net7.0\
 D:\Documents\Programming Stuff\Advent of Code\AdventOfCode2023\obj\Debug\net7.0\AdventOfCode2023.pdb
 D:\Documents\Programming Stuff\Advent of Code\AdventOfCode2023\obj\Debug\net7.0\AdventOfCode2023.genruntimeconfig.cache
 D:\Documents\Programming Stuff\Advent of Code\AdventOfCode2023\obj\Debug\net7.0\ref\AdventOfCode2023.dll
+D:\Documents\Programming Stuff\Advent of Code\AdventOfCode2023\bin\Debug\net7.0\MathNet.Numerics.dll
+D:\Documents\Programming Stuff\Advent of Code\AdventOfCode2023\obj\Debug\net7.0\AdventOfCode2023.csproj.CopyComplete
+D:\Documents\Programming Stuff\Advent of Code\AdventOfCode2023\bin\Debug\net7.0\libz3.dll
+D:\Documents\Programming Stuff\Advent of Code\AdventOfCode2023\bin\Debug\net7.0\Microsoft.Z3.dll
+D:\Documents\Programming Stuff\Advent of Code\AdventOfCode2023\bin\Debug\net7.0\runtimes\osx-x64\native\libz3.dylib
+D:\Documents\Programming Stuff\Advent of Code\AdventOfCode2023\bin\Debug\net7.0\runtimes\win-x64\native\libz3.dll

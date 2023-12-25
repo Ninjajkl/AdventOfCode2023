@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "1zz+4qqI5SXh45EwVFdXyk9UNF7OQTujpBO61cUxI3y7aTRaQpei1R1CMO+71JqZKSP9DxYUF2H2cadj2AS64w==",
+  "dgSpecHash": "5YULw1f0uLA91LcKHHZJKuo7TzE8O3KO59bkUZ9RThE7vq4k/MBcLxF2Ztf7fQHjOuvQTV4N0iHRbzXo4pz7ag==",
   "success": true,
   "projectFilePath": "D:\\Documents\\Programming Stuff\\Advent of Code\\AdventOfCode2023\\AdventOfCode2023.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Ninja\\.nuget\\packages\\mathnet.numerics\\5.0.0\\mathnet.numerics.5.0.0.nupkg.sha512",
+    "C:\\Users\\Ninja\\.nuget\\packages\\microsoft.z3\\4.12.2\\microsoft.z3.4.12.2.nupkg.sha512"
+  ],
   "logs": []
 }

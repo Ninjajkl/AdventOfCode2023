@@ -7,8 +7,40 @@
   "targets": {
     ".NETCoreApp,Version=v7.0": {
       "AdventOfCode2023/1.0.0": {
+        "dependencies": {
+          "MathNet.Numerics": "5.0.0",
+          "Microsoft.Z3": "4.12.2"
+        },
         "runtime": {
           "AdventOfCode2023.dll": {}
+        }
+      },
+      "MathNet.Numerics/5.0.0": {
+        "runtime": {
+          "lib/net6.0/MathNet.Numerics.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.0.0"
+          }
+        }
+      },
+      "Microsoft.Z3/4.12.2": {
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Z3.dll": {
+            "assemblyVersion": "4.12.2.0",
+            "fileVersion": "4.12.2.0"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/osx-x64/native/libz3.dylib": {
+            "rid": "osx-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/libz3.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          }
         }
       }
     }
@@ -18,6 +50,20 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "MathNet.Numerics/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pg1W2VwaEQMAiTpGK840hZgzavnqjlCMTVSbtVCXVyT+7AX4mc1o89SPv4TBlAjhgCOo9c1Y+jZ5m3ti2YgGgA==",
+      "path": "mathnet.numerics/5.0.0",
+      "hashPath": "mathnet.numerics.5.0.0.nupkg.sha512"
+    },
+    "Microsoft.Z3/4.12.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-dOV/D1K+OH2Ris7HcXHM2OIyHaFc6t3twNg9d8xqRKs3JZBvWgTp+OmzVfNGPn+Yz/wQDAHeWgecJly5aHGYAw==",
+      "path": "microsoft.z3/4.12.2",
+      "hashPath": "microsoft.z3.4.12.2.nupkg.sha512"
     }
   }
 }
