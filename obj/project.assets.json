@@ -2,6 +2,19 @@
   "version": 3,
   "targets": {
     "net7.0": {
+      "GraphNetworkLibrary/1.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/GraphLibrary.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/GraphLibrary.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "MathNet.Numerics/5.0.0": {
         "type": "package",
         "compile": {
@@ -44,6 +57,20 @@
     }
   },
   "libraries": {
+    "GraphNetworkLibrary/1.0.1": {
+      "sha512": "GQA0dxUymVF7SPYQ0d1dOY9LVdV+BpogBpIFdeTok7ThTMA/lOLdOvWiIeKp8A5d6RWroUioTjmOe58zMzC9QA==",
+      "type": "package",
+      "path": "graphnetworklibrary/1.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "License.txt",
+        "graphnetworklibrary.1.0.1.nupkg.sha512",
+        "graphnetworklibrary.nuspec",
+        "lib/netstandard2.0/GraphLibrary.dll",
+        "lib/netstandard2.0/GraphLibrary.xml"
+      ]
+    },
     "MathNet.Numerics/5.0.0": {
       "sha512": "pg1W2VwaEQMAiTpGK840hZgzavnqjlCMTVSbtVCXVyT+7AX4mc1o89SPv4TBlAjhgCOo9c1Y+jZ5m3ti2YgGgA==",
       "type": "package",
@@ -86,6 +113,7 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "GraphNetworkLibrary >= 1.0.1",
       "MathNet.Numerics >= 5.0.0",
       "Microsoft.Z3 >= 4.12.2"
     ]
@@ -137,6 +165,10 @@
       "net7.0": {
         "targetAlias": "net7.0",
         "dependencies": {
+          "GraphNetworkLibrary": {
+            "target": "Package",
+            "version": "[1.0.1, )"
+          },
           "MathNet.Numerics": {
             "target": "Package",
             "version": "[5.0.0, )"

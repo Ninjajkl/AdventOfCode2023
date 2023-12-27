@@ -19,7 +19,7 @@ namespace AdventOfCode2023
         };
 
         /// <summary>
-        /// The original method for computing the answer for Part 1
+        /// Computes the answer for Part 1
         /// </summary>
         /// <param name="inputName">The address of the input file to take input from
         /// </param>
@@ -67,7 +67,7 @@ namespace AdventOfCode2023
         }
 
         /// <summary>
-        /// The original method for computing the answer for Part 2
+        /// Computes the answer for Part 2
         /// </summary>
         /// <param name="inputName">The address of the input file to take input from
         /// </param>
